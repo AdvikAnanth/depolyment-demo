@@ -1,0 +1,99 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: 'Alata', sans-serif;
+}
+.Header {
+  background-color: white; 
+  padding: 30px; 
+  position: relative;
+}
+
+.Header ul {
+  list-style-type: none; 
+  margin: 0;
+  padding: 0;
+}
+
+.Header .Topmenu {
+  display: inline-block; 
+  margin-right: 20px; 
+  position: relative; 
+}
+
+.Header .Topmenu a {
+  color: black !important;
+  text-decoration: none !important; 
+  padding: 10px; 
+  display: block; 
+}
+
+.Header .Topmenu .Submenu {
+  display: none;
+  position: absolute; 
+  top: 100%; 
+  left: 0; 
+  background-color:white; 
+  z-index: 100; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px; 
+}
+
+.Header .Topmenu:hover .Submenu {
+  display: block; 
+  width: 150px;
+  background-color: white;
+}
+
+.Header .Topmenu .Submenu li {
+  display: flex;
+  align-items: center;
+  padding: 0px; 
+}
+
+.Header .Topmenu .Submenu li a {
+  color: black; 
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.Header .Topmenu .Submenu li a:hover {
+  color: blue;
+}
+.Header .Topmenu_left {
+  position: absolute; 
+  top: 1px; 
+  right: 100px; 
+  display: flex;
+  align-items: right;
+  margin: 10px;
+}
+
+
+.Header .Topmenu_left button {
+  background-color: transparent;
+  padding: 10px  20px;
+  margin-right: 10px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: box-shadow 0.3s,border-color 0.3s;
+  color: black;
+  cursor: pointer;
+  outline: none;
+  margin-top: 33px;
+}
+.Header .Topmenu_left button:hover {
+  border-color: gray;
+  
+}
+.Header .Topmenu_left button:active {
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3); 
+  border-color: black;
+}
